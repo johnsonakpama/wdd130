@@ -1,16 +1,24 @@
 body {
     width: max-width;
     margin: 0 auto;
+    background-color: pink;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 0 auto;
+
 }
 
 nav a {
     text-align: center;
     color: black;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    margin: 50px 0;
 }
 
 .button-box {
@@ -23,10 +31,12 @@ main section {
 
 #background {
     height: 725px;
+    background-color: plum;
 }
 
-body {
-    background-color: pink;
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 header {
@@ -42,6 +52,10 @@ nav a:hover {
     background-color: aquamarine;
     color: aqua;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,.join:hover {
@@ -49,20 +63,24 @@ nav a:hover {
     color:pink;
 }
 
-#background {
-    background-color: plum;
-}
-
 .msg {
     background-color: lemonchiffon;
+    line-height: 1.5em;
+}
+
+.card-img {
+    border: 10px solid #005fd4;
 }
 
 footer {
     background-color: rgb(255, 0, 115);
+    color: blue;
 }
 
 .home-title {
     color: black;
+    font-family: 'Rock salt',cursive,sans-serif;
+    font-size: 2em;
 }
 
 footer a {
@@ -71,7 +89,7 @@ footer a {
 }
 
 footer a:hover {
-    color: brown;
+    color: black;
 }
 
 .icon {
@@ -85,6 +103,7 @@ h4 {
 
 .msg h2 {
     color: black;
+    margin: 0 auto;
 }
 
 .msg p {
@@ -97,6 +116,7 @@ footer h3 {
 
 footer p {
     font-size: 1.2em;
+    padding: 25px;
 }
 
 footer p a:hover {
