@@ -37,6 +37,14 @@ body {
   font-size: 18px;
   text-align: center;
 }
+
+ #logo_link {
+  padding-top: 50px;
+  justify-self: center;
+  align-self: center;
+
+}
+
 img {
   display: block;
   margin: 0 auto;
@@ -59,6 +67,7 @@ header {
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
+  
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
@@ -98,15 +107,15 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 nav {
+  display: flex;
+  list-style-type: none;
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
+  justify-content: space-around;
 }
-nav  {
-  list-style-type: none;
-  display: flex;
-}
+
 nav a {
   padding:1em;
   min-width: 120px;
