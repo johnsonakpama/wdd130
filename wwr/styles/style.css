@@ -12,6 +12,7 @@ body {
 }
 
 header {
+    display: grid;
     background-color: aliceblue;
     grid-template-columns: 150px auto;
 }
@@ -31,7 +32,7 @@ nav a {
     text-align: center;
     color: black;
     text-decoration: none;
-    padding: 35px;
+    padding: 10px;
 }
 
 #hero {
@@ -46,9 +47,6 @@ nav a {
     z-index: -1;
 }
 
-.icon #hero-img {
-    width: 100%;
-}
 
 
 #hero-msg {
@@ -67,19 +65,24 @@ nav a {
     width: 100%;
 }
 
+#home-grid {
+    display: grid;
+    grid-template-columns: 10px 10px 10px;
+}
+
 .rivers-card{
-    grid-column: 2/4;
-    grid-row: 2/3;
+    grid-template-columns: 2-4;
+    grid-template-rows: 2-3;
 }
 
 .camping-card {
-    grid-column: 5/7;
-    grid-row: 2/3;
+    grid-template-columns: 5-7;
+    grid-template-rows: 2-3;
 }
 
 .rapids-card{
-    grid-column: 8/10;
-    grid-row: 2/3;
+    grid-template-columns: 8-10;
+    grid-template-rows: 2-3;
 }
 
 .button-box {
@@ -93,8 +96,8 @@ main section {
 #background {
     height: 725px;
     background-color: plum;
-    grid-column: 1/11;
-    grid-row: 4/9;
+    grid-column: 1-11;
+    grid-row: 4-9;
 }
 
 #content {
@@ -125,8 +128,9 @@ nav a:hover {
 .msg {
     background-color: lemonchiffon;
     line-height: 1.5em;
-    grid-column: 6/10;
-    grid-row: 6/7;
+    padding: 35px;
+    grid-column: 6-10;
+    grid-row: 6-7;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
@@ -145,7 +149,7 @@ nav a:hover {
  .mountain {
     width: 100%;
     border: 10px solid #6f7364;
-    grid-column: 6/10;
+    grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
@@ -154,7 +158,7 @@ nav a:hover {
 footer {
     background-color: rgb(255, 0, 115);
     color: blue;
-    padding: 25px 25px;
+    padding: 25px 50px;
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
