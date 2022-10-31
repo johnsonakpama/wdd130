@@ -71,18 +71,18 @@ nav a {
 }
 
 .rivers-card{
-    grid-template-columns: 2-4;
-    grid-template-rows: 2-3;
+    grid-template-columns: 2/4;
+    grid-template-rows: 2/3;
 }
 
 .camping-card {
-    grid-template-columns: 5-7;
-    grid-template-rows: 2-3;
+    grid-template-columns: 5/7;
+    grid-template-rows: 2/3;
 }
 
 .rapids-card{
-    grid-template-columns: 8-10;
-    grid-template-rows: 2-3;
+    grid-template-columns: 8/10;
+    grid-template-rows: 2/3;
 }
 
 .button-box {
@@ -96,8 +96,8 @@ main section {
 #background {
     height: 725px;
     background-color: plum;
-    grid-column: 1-11;
-    grid-row: 4-9;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
 #content {
