@@ -1,12 +1,13 @@
 
 <!DOCTYPE html>
 <html lang="en-us">
-    
+   
   <head>
     <meta charset="utf-8">
     <title>Site Plan</title>
     <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
   </head>
+  
 
   <body>
     <header>
@@ -67,6 +68,7 @@
       <h4>
         Paragraph Font: Roboto  <!-- change this -->
       </h4>
+      <article>
       <p>In today world where internet seems to be everything, some individual and organization underestimate the influence and power digital media could have on their goods and services, and they did not focus their services on how get millons and billons of people to get to know their product through digital marketing. </p>
       
       <h3>
@@ -75,6 +77,7 @@
       <p class="colored">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
       </p>
+      </article>
 
       <!-- ------------------------Step 10------------------------------ -->
 
@@ -99,10 +102,8 @@
           about me <!-- change this -->
         </div>
         <div class="sm-page3">
-          <div>
-           contact us
-          </div>  <!-- change this -->
-        </div>
+          contact us
+        </div>  <!-- change this -->
 
         <div class="top">
           &nbsp;
@@ -152,43 +153,66 @@
         <img src="https://th.bing.com/th/id/R.3b7758bc9c787a619c567b7c8b9d24e6?rik=60hn9phhWH6qLg&pid=ImgRaw&r=0" alt="image for page3">
         <img src="https://www.h2obuildingservices.co.uk/wp-content/uploads/2021/04/bigstock-Smooth-Water-Ripples-15410228.jpg" alt="image for page3">
       </section>
-      <form action="my-handing-form-page"method="post">
-         <legend>contact info</legend>
-         <label>for="name">Name:</label>
-         <input type="text" id="name"name="user_name">
+      
+        <fieldset>
+      <ul>
+     <form action="my-handing-form-page"method="post">
+         <li><legend>contact info</legend></li>
+        <li> <label for="name">Name:</label></li>
+        <li> <input type="text" id="name"name="user_name"></li>
 
-         <label for="mail">E-mail:</E-mail></label>
-         <input type="email"id="mail"name="user_mail">
+         <li><label for="mail">E-mail:</E-mail></label></li>
+         <li><input type="email"id="mail"name="user_mail"></li>
 
-         <label for="msg">massage:</label>
-         <textarea id="msg"name="user_massage"></textarea>
+         <li><label for="msg">massage:</label></li>
+        <li> <textarea id="msg"name="user_massage"></textarea></li>
 
-         <label for="phone">phone#:</label>
-         <input type="tel"id="phone"name="phone">
+         <li><label for="phone">phone#:</label></li>
+         <li><input type="tel"id="phone"name="phone"></li>
 
-         <label for="title">title:</title></label>
+         <li><label for="title">title:</title></label></li>
 
-         <label>Mr</label>
-         <input type="radio"name="title"value="Mr">
+         <li><label>Mr</label></li>
+        <li> <input type="radio"name="title"value="Mr"></li>
 
-         <label>Mrs</label>
-         <input type="radio"name="title"value="Mrs"
+        <li> <label>Mrs</label></li>
+         <li><input type="radio"name="title"value="Mrs"></li>
 
       </fieldset>
-      <button type="submit">sent your massage</button>
-
+     <li> <button type="submit">submit</button></li>
+    </ul>
+  </li>
       </form>
-      </main>
+      
+<script>
+  // get the feedback div element so we can do something with it.
+  const feedbackElement = document.getElementById('feedback');
+  // get the form so we can read what was entered in it.
+  const formElement = document.forms[0];
+  // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+  formElement.addEventListener('submit', function(e) {
+      // stop the form from doing the default action.
+      e.preventDefault();
+      // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+      feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+      // make the feedback element visible.
+      feedbackElement.style.display = "block";
+      // add a class to move everything down so our message doesn't cover it.
+      document.body.classList.toggle('moveDown');
+  });
+</script>
+                  
+   </main>
       <footer>
         <p>Home for all &copy; 2022-johnson akpama</p>
         <p><a href="site-plan.html">Site plan</a></p>
         <p><a href="contactus">Contact Us</a></p>
         <div class="social">
-           <a href="https://facebook.com"target="_blank"></a>
-           <img src="images/facebook.png" alt="fb icon">
-           <a href="https://twitter.com"target=_blank></a>
-           <img src="images/twitter.png" alt="twitter icon"></a>
-           <a href="https://instargm.com"target=_blank></a>
+          <a href="https://facebook.com"target="_blank"></a>
+          <img src="images/facebook.png" alt="fb icon">
+          <a href="https://twitter.com"target=_blank></a>
+          <img src="images/twitter.png" alt="twitter icon"></a>
+          <a href="https://instargm.com"target=_blank></a>
            <img src="images/instagram.png" alt="instagram icon"></a>
         </div>
     
