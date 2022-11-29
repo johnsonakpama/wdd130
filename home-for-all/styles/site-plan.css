@@ -30,36 +30,63 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-  max-width: 1200px;
+  background-color: #FAD6A6;
   margin: 0 auto;
-  padding: 4em;
   font-size: 18px;
 
 }
-img {
-  display: block;
+.content {
+  max-width: 1200px;
   margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+#logo-link {
+  padding-top: 50px;
+  justify-self: left;
+  align-self: left;
+}
+.p {
+  padding: 10px;
+  margin: 0;
+}
+.page-2 {
+  display: grid;
+  grid-template-columns: 2/3;
+  text-align: left;
+  justify-items: auto;
+  grid-gap: 2em;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #617648;
+}
+h1{
+  font-size: 2.5em;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.75em;
 }
 h2, h3 {
   text-align: center;
+
 }
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
+img {
+  max-width: 500px;
+  padding-left: 10em;
+  border: 10px;
 }
+
 header {
-  padding: 1em;
-  text-align: center;
-  color: var(--paragraph-color-on-color);
-  background-color: var(--paragraph-background-color);
+  grid-template-columns: 250px auto;
+  align-items: center;
+  background-color: #617648;
 }
 header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+  color: #FAD6A6;
 }
 
 p {
