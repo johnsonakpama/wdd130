@@ -50,7 +50,7 @@ body {
 }
 .page-2 {
   display: grid;
-  grid-template-columns: 2/3;
+  grid-column: 2/3;
   text-align: left;
   justify-items: auto;
   grid-gap: 2em;
