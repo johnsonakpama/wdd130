@@ -80,8 +80,9 @@ img {
   border: 10px;
 }
 
-header {
+.header {
   grid-template-columns: 250px auto;
+  font-family: roboto;
   align-items: center;
   background-color: #617648;
 }
