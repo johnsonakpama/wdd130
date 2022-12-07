@@ -66,13 +66,20 @@ h1{
 }
 h2 {
   font-size: 2em;
+  text-align: center;
 }
 h3 {
   font-size: 1.75em;
-}
-h2, h3 {
   text-align: center;
-
+}
+h4 {
+  font: size 1.5em; 
+}
+h5 {
+  font-size: 1.25em;
+}
+h6 {
+  font-size: .75em;
 }
 img {
   max-width: 500px;
@@ -80,29 +87,54 @@ img {
   border: 10px;
 }
 
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.button {
+  background-color: #617648;
+  padding: 1em 2em;
+  color: #FAD6A6;
+}
+.button {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 30px;
+  border-radius: 20px;
+}
+.grid-default{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3em 0;
+}
 .header {
+  display: grid;
   grid-template-columns: 250px auto;
   font-family: roboto;
   align-items: center;
-  background-color: #617648;
+  background-color: #FAD6A6;
 }
-header > h1, header > h2 {
-  color: #FAD6A6;
+nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(6em,1fr));
+  justify-items: center;
 }
-
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
+.nav-item {
+  color: #617648;
   padding: 1em;
 }
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
+.nav-item:hover{
+  color: #fff;
+  background-color: #000;
 }
-.colors th {
-  background-color: #999;
+.footer {
+  background-color: #3e3e3e;
+  color: #FAD6A6;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
 }
 .colors td{
   width: 25%;
