@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo"
+                    src="http://www.bardfieldacademy.org/wp-content/uploads/2016/08/00106-3D-company-logos-design-free-logo-online-02-300x274.png"
+                    alt="Logo">
+            </a>
+            <nav>
+                <a href="index.html">index.html</a>
+                <a href="about me">About Me</a>
+                <a href="contact us">Contact Us</a>
+
+            </nav>
+        </header>
+        <main>
+
+
+            <div>
+                <h3>The blessings of technology</h3>
+                <section class="grid-section pabe-3 section">
+                    <p class>
+                        The development of technology has brought changes to the way of doing business and which has
+                        given
+                        birth
+                        to electronic commerce so don’t be caught using outdated way of doing things in the rapidly
+                        changing
+                        world, where internet is everything doing so can affect your business success, for you to stand
+                        out
+                        from
+                        the crowd you need to take your goods and services to next level where people can find and get
+                        information
+                        about your services without meeting with you. Furthermore the use of technology have help so
+                        many
+                        business
+                        owner reduce cost of business with the invent of technology so many individual and company were
+                        able
+                        to
+                        open several domestic and international business location, we cannot deny that technology has
+                        become
+                        a
+                        major part of everyday life,, so service provider used technology to communicate with customer.
+                        In
+                        today’s
+                        busy business environment with website which allow customer to find answer to their question or
+                        quick
+                        knowledge of what they might be looking for, with the fast shipment options allow business owner
+                        to
+                        move
+                        goods and services over a large geographic area. Finally when you take the advantage of the
+                        technology,
+                        you benefit because it’s gives your services a stronger public image, so contact us to enable
+                        you
+                        take
+                        your goods and services to the next level by the used of website.
+                    </p>
+                    <p>Images for the Page 3</p>
+                    <img class="image-right"
+                        src="https://th.bing.com/th/id/R.3b7758bc9c787a619c567b7c8b9d24e6?rik=60hn9phhWH6qLg&pid=ImgRaw&r=0"
+                        alt="image for page3">
+                    <img class="image-right"
+                        src="https://www.h2obuildingservices.co.uk/wp-content/uploads/2021/04/bigstock-Smooth-Water-Ripples-15410228.jpg"
+                        alt="image for page3">
+                </section>
+            </div>
+            <div class="customer_form">
+                <div id="feedback">
+                    <form action="feedback" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+
+                        <label for="mail">E-mail:</E-mail></label>
+                        <input type="email" id="mail" name="user_mail">
+
+                        <label for="phone">phone#:</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="msg">massage:</label>
+                        <textarea id="msg" name="user_massage"></textarea>
+
+                        <label for="title">title:</title></label>
+
+                        <label>Male</label>
+                        <input type="radio" name="title" value="Male">
+
+                        <label>Female</label>
+                        <input type="radio" name="title" value="Female">
+
+                        <label>other</label>
+                        <input type="radio" name="title" value="other">
+                        <button type="submit">submit</button>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Home for all &copy; 2022-johnson akpama</p>
+            <p><a href="site-plan.html">Site plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon"></a>
+                <a href="https://twitter.com" target=_blank>
+                    <img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="https://instargm.com" target=_blank>
+                    <img src="images/instagram.png" alt="instagram icon"></a>
+            </div>
+
+        </footer>
+    </div>
+
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function (e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+
+</body>
+
+</html>
